@@ -49,7 +49,7 @@ class Square:
         """my_print method
         print in stdout a square whit # symbol
         or print "nothing" if size is equal to 0 """
-        if self.__size is not 0:
+        if self.size is not 0:
             for i in range(self.position[1]):
                 print("")
             for j in range(self.size):
