@@ -71,7 +71,3 @@ Call function with more than 2 arguments:
 Call function with only 1 argument:
         >>> add_integer(1)
         99
-
-add two number integer
-        >>> add_integer(1547, 8    -24 + 52)
-        1583
