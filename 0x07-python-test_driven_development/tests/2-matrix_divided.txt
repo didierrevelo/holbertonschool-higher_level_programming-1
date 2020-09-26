@@ -1,0 +1,15 @@
+The ``2-matrix_divide`` module
+============================
+
+Using ``matrix_divide``
+---------------------
+Checking docstring for module:
+        >>> __import__('2-matrix_divide').__doc__ != None
+        True
+
+Import ``matrix_divide`` from the ``2-matrix_divide`` module:
+        >>> matrix_divide = __import__('2-matrix_divide').add_integer
+
+Check docstring for function:
+        >>> len(matrix_divide.__doc__) > 0
+        True

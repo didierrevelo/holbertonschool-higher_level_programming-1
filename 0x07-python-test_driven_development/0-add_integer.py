@@ -1,19 +1,21 @@
 #!/usr/bin/python3
-""" add method """
+""" add_integer method """
 
 
 def add_integer(a, b=98):
-    """ this method adds 2 integers
+    """
+        add_integer
+        this method adds 2 integers
 
-    argments:
-        a argument is type int or float
-        b argument is type int or float
+        argments:
+            a argument is type int or float
+            b argument is type int or float
 
-    raises:
-        TypeError: if a or b are not integers or float
+        raises:
+            TypeError: if a or b are not integers or float
 
-    return:
-        result of add two integers
+        return:
+            result of add two integers
     """
     if type(a) is not (int) and type(a) is not (float):
         raise TypeError("a must be an integer")
