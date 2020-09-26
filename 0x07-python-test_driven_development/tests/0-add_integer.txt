@@ -71,3 +71,7 @@ Call function with more than 2 arguments:
 Call function with only 1 argument:
         >>> add_integer(1)
         99
+
+Adding big numbers:
+        >>> add_integer(1213213213213213212313213212313223, 45465456465465465465465465465)
+        1213258678669678677778678677778688
