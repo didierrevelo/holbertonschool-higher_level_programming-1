@@ -41,31 +41,31 @@ add two number integer
 Adding a string with int:
         >>> add_integer("B", 2)
         Traceback (most recent call last):
-                ...
+        ...
         TypeError: a must be an integer
 
 Adding a int with string:
         >>> add_integer(2, "a")
         Traceback (most recent call last):
-                ...
+        ...
         TypeError: b must be an integer
 
         Adding with inf:
         >>> add_integer(float('inf'), 2)
         Traceback (most recent call last):
-                ...
+        ...
         OverflowError: cannot convert float infinity to integer
 
 Call empty function:
         >>> add_integer()
         Traceback (most recent call last):
-                ...
+        ...
         TypeError: add_integer() missing 1 required positional argument: 'a'
 
 Call function with more than 2 arguments:
         >>> add_integer(1, 2, 3)
         Traceback (most recent call last):
-                ...
+        ...
         TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
 Call function with only 1 argument:
@@ -75,3 +75,9 @@ Call function with only 1 argument:
 Adding big numbers:
         >>> add_integer(1213213213213213212313213212313223, 45465456465465465465465465465)
         1213258678669678677778678677778688
+
+passing undefined variable as second argument
+        >>> add_integer(2, o)
+        Traceback (most recent call last):
+        ...
+        NameError: name 'o' is not defined

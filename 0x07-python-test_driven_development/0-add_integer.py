@@ -7,17 +7,10 @@
 
 
 def add_integer(a, b=98):
-    """
-        add_integer
-        this method adds 2 integers
-
+    """add_integer this method adds 2 integers
         argments:
             a argument is type int or float
             b argument is type int or float
-
-        raises:
-            TypeError: if a or b are not integers or float
-
         return:
             result of add two integers
     """
