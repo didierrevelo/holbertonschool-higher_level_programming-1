@@ -60,3 +60,6 @@ Check docstring for function:
         Traceback (most recent call last):
         ...
         TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+        >>> matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf'))
+        [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
