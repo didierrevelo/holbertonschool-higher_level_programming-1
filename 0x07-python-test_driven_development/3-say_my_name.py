@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 """
+this method print to full name in format
+My name is <first name> <last name>
 """
 def say_my_name(first_name, last_name=""):
-    """[summary]
+    """say_my_name
 
     Args:
-        first_name ([type]): [description]
-        last_name (str, optional): [description]. Defaults to "".
+        first_name ([str]): [first name]
+        last_name (str, optional): [last name]. Defaults to "".
 
     Raises:
-        TypeError: [description]
-        TypeError: [description]
+        TypeError: [if first name is not str]
+        TypeError: [if last name is not str]
     """
 
     if type(first_name) is not str:
