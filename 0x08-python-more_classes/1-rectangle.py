@@ -8,8 +8,10 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """initialization of instance attributes
         Args:
-                width (int, optional): Private instance attribute. Defaults to 0.
-                height (int, optional): Private instance attribute. Defaults to 0.
+                width (int, optional): Private\
+                    instance attribute. Defaults to 0.
+                height (int, optional): Private\
+                    instance attribute. Defaults to 0.
         """
         self.width = width
         self.height = height
