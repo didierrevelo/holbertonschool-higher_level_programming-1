@@ -84,10 +84,9 @@ Raises:
 
     def __str__(self):
         """str method
-
-		Returns:
-			int: [description]
-		"""
+        Returns:
+            int: [description]
+        """
         new = ""
         if self.__width == 0 or self.__height == 0:
             return new
