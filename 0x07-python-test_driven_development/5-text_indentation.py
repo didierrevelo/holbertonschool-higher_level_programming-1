@@ -15,12 +15,12 @@ def text_indentation(text):
                     exception with the message
                     text must be a string
     """
-    begin = 0
+    run = 0
     if not isinstance(text, str):
         raise TypeError('text must be a string')
     for i, c in enumerate(text):
         if c in '.?:':
-            print(text[begin: i + 1].strip() + '\n')
-            begin = i + 1
-    if begin < len(text):
-        print(text[begin:].strip(), end="")
+            print(text[run: i + 1].strip() + '\n')
+            run = i + 1
+    if run < len(text):
+        print(text[run:].strip(), end="")
