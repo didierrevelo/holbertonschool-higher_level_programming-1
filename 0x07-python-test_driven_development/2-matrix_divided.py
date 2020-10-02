@@ -28,7 +28,7 @@ def matrix_divided(matrix, div):
         raise TypeError(Err[1])
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if type(div) is not int and type(div) is not float:
+    if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
 
     for row in matrix:
@@ -39,6 +39,6 @@ def matrix_divided(matrix, div):
         if len(matrix[0]) is not len(row):
             raise TypeError(Err[2])
         for num in row:
-            if type(num) is not int and type(num) is not float:
+            if not isinstance(num, int) and not isinstance(num, float):
                 raise TypeError(Err[1])
     return [[round(num / div, 2)for num in row]for row in matrix]
