@@ -15,7 +15,9 @@ class Student:
         """json type dict"""
         if attrs is None:
             return self.__dict__
-        if not isinstance(attrs, list) and not (isinstance(attrs[strs], str) for strs in attrs):
+        if not isinstance(attrs, list):
+            return self.__dict__
+        if not (isinstance(attrs[strs], str) for strs in attrs):
             return self.__dict__
         return ({key: value for key, value in self.__dict__.items()
                 if key in attrs})
