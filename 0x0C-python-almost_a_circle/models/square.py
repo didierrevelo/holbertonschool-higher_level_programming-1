@@ -21,13 +21,12 @@ class Square(Rectangle):
         return self.width
 
     @size.setter
-    def size(self, val):
+    def size(self, value):
         """
             setter
         """
-        self.validate_attributes("width", val)
-        self.width = val
-        self.height = val
+        self.width = value
+        self.height = value
 
     def __str__(self):
         """
