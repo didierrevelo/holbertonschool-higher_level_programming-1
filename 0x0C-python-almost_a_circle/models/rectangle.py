@@ -6,7 +6,9 @@ import sys
 
 class Rectangle(Base):
     """Rectangle class"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
+        """init method"""
         self.width = width
         self.height = height
         self.x = x
@@ -73,5 +75,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns string about rectangle"""
-        return('[Rectangle] ({}) {}/{} - {}/{}'\
-                .format(self.id, self.x, self.y, self.width, self.height))
+        return('[Rectangle] ({}) {}/{} - {}/{}'
+               .format(self.id, self.x, self.y, self.width, self.height))
