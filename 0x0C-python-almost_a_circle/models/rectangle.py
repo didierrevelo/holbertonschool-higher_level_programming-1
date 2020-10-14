@@ -94,9 +94,5 @@ class Rectangle(Base):
                         setattr(self, key, value)
 
     def to_dictionary(self):
-        dict = {}
-        key = ['id', 'width', 'height', 'x', 'y']
-
-        for i in key:
-            dict[i] = getattr(self, i)
-        return dict
+        """dict"""
+        return {'id': self.id, 'width': self.width, 'height': self.height, 'x': self.x, 'y': self.y}
