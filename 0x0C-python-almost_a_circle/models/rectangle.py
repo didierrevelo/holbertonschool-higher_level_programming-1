@@ -60,7 +60,9 @@ class Rectangle(Base):
         """m method
         print in stdout a square whit # symbol
         or print "nothing" if height is equal to 0 """
+        print('\n' * self.y, end="")
         for j in range(self.height):
+            print(' ' * self.x, end="")
             print("#" * self.width)
 
     @staticmethod
