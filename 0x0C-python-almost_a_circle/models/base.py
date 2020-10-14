@@ -41,4 +41,3 @@ class Base:
 
         with open(filen, "w") as fd:
             json.dump(list, fd)
-
