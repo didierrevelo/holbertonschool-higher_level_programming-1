@@ -72,6 +72,6 @@ class Rectangle(Base):
             raise ValueError("{} must be >= 0".format(name))
 
     def __str__(self):
-        """returns string of info about rectangle"""
+        """returns string about rectangle"""
         return('[Rectangle] ({}) {}/{} - {}/{}'
-            .format(self.id, self.x, self.y, self.width, self.height))
+                .format(self.id, self.x, self.y, self.width, self.height))
