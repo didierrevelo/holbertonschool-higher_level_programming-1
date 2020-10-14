@@ -70,3 +70,8 @@ class Rectangle(Base):
                 raise ValueError("{} must be > 0".format(name))
         elif value < 0:
             raise ValueError("{} must be >= 0".format(name))
+
+    def __str__(self):
+        """returns string of info about rectangle"""
+        return('[Rectangle] ({}) {}/{} - {}/{}'
+            .format(self.id, self.x, self.y, self.width, self.height))
