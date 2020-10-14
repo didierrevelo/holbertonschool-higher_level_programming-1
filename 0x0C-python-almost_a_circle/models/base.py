@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ class base for all proyect
 """
-
+import json
 
 class Base:
     """class base"""
@@ -14,3 +14,10 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """returns dictionaries"""
+        if not list_dictionaries:
+            return('[]')
+        return(json.dumps(list_dictionaries))
