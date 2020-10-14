@@ -92,3 +92,15 @@ class Rectangle(Base):
                 for key, value in kwargs.items():
                     if key in keys:
                         setattr(self, key, value)
+
+    def to_dictionary(self):
+        dict = {}
+        key = ['id',
+               'width',
+               'height',
+               'x',
+               'y']
+
+        for i in key:
+            dict[i] = getattr(self, i)
+        return dict
