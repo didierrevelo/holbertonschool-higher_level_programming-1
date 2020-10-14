@@ -95,11 +95,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         dict = {}
-        key = ['id',
-               'width',
-               'height',
-               'x',
-               'y']
+        key = ['id', 'width', 'height', 'x', 'y']
 
         for i in key:
             dict[i] = getattr(self, i)
