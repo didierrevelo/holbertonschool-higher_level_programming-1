@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ class base for all proyect
 """
+from genericpath import exists
 import json
 from os import path
 
@@ -60,9 +61,9 @@ class Base:
     @classmethod
     def load_from_file(cls):
         file = cls.__name__+".json"
-        if path.exists(file):
+        try:
             with open(file, 'r', encoding="utf-8") as f:
                 new_dict = cls.from_json_string(f.read())
             return [cls.create(**run) for run in new_dict]
-        else:
+        except:
             return []
