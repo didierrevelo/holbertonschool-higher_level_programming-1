@@ -60,7 +60,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         file = cls.__name__+".json"
-        if file:
+        if path.exists(file):
             with open(file, 'r', encoding="utf-8") as f:
                 new_dict = cls.from_json_string(f.read())
             return [cls.create(**run) for run in new_dict]
