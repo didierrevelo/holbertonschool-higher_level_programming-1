@@ -1,3 +1,3 @@
 #!/bin/bash
 # 1-body.sh
-curl -sL "$1"
+curl -sL $1
