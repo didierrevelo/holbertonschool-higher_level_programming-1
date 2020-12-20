@@ -5,20 +5,21 @@
 
 
 def find_peak(list_of_integers):
-    if not list_of_integers:
-        return
-    init = 0
-    finish = len(list_of_integers) - 1
-    return findPeak_e(list_of_integers, init, finish)
-
-
-def findPeak_e(A, init, finish):
     """
     finds a peak in a list of unsorted integers.
     """
-    if init == finish:
-        return A[finish]
-    mid = (init + finish)//2
-    if A[mid] > A[mid + 1]:
-        return findPeak_e(A, init, mid)
-    return findPeak_e(A, mid + 1, finish)
+    l1 = 0
+    l2 = len(list_of_integers) - 1
+    li = list_of_integers
+    if li is None:
+        return None
+    if len(li) == 1:
+        return li[0]
+    
+    while  l1 < l2:
+        mid = (l2 + l1) // 2
+        if li[mid] > li[mid + 1] and li[mid] > li[mid + 1]:
+            return li[mid]
+        if li[mid] < li[mid + 1] and li[mid] > li[mid - 1]:
+            return li[mid + 1]
+        return max(li)
