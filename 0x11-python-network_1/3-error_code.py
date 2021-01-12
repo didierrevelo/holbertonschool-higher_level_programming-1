@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Response header value #0
+"""3. Error code #0
 """
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
