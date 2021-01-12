@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from urllib import request
+import urllib.request
 import sys
 """
 Write a Python script that takes in a URL,
@@ -8,5 +8,5 @@ of the X-Request-Id variable found in the header of the response.
 """
 if __name__ == '__main__':
     url = sys.argv[1]
-    with request.urlopen(url) as response:
+    with urllib.request.urlopen(url) as response:
         print(response.getheader('X-Request-Id'))
