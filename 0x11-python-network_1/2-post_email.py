@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- POST an email #0
+POST an email #0
 """
 import urllib.request
 import sys
