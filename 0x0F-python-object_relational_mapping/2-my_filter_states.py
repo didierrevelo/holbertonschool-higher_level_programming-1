@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''
-    Task 2
-'''
+"""
+Filter states by user input 
+"""
 import MySQLdb
 import sys
 
