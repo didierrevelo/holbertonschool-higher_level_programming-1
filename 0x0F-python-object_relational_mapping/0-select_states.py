@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-'''
-    Task 0
-'''
+""" Get all states 
+"""
 import MySQLdb
 import sys
 
