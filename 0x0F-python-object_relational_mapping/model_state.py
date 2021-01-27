@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-First state model 
+First state model
 """
 import sys
 from model_state import Base, State
