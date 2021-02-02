@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-14. Cities in state 
+14. Cities in state
 """
 from model_state import Base, State
 from model_city import City
