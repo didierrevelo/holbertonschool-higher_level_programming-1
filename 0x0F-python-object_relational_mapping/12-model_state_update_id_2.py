@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-12. Update a state 
+12. Update a state
 """
 from model_state import Base, State
 from sqlalchemy import create_engine, select, Table, MetaData
