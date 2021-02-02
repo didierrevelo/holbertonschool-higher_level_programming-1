@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Task 8
+    8. First state
 """
 from model_state import Base, State
 from sqlalchemy import create_engine, select, Table, MetaData
